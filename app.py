@@ -6,7 +6,6 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 import re
 import nltk
 from nltk.corpus import stopwords
-from lime.lime_text import LimeTextExplainer
 import matplotlib.pyplot as plt
 
 
@@ -51,6 +50,7 @@ user_input = st.text_area("Paste News Article Here")
 explainer = LimeTextExplainer(class_names=class_names)
 
 if st.button("Predict", key="predict_button"):
+    from lime.lime_text import LimeTextExplainer
     if user_input.strip() == "":
         st.warning("Please enter some text.")
     else:
