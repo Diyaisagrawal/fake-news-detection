@@ -50,7 +50,7 @@ user_input = st.text_area("Paste News Article Here")
 explainer = LimeTextExplainer(class_names=class_names)
 
 if st.button("Predict", key="predict_button"):
-    from lime.lime_text import LimeTextExplainer
+    # from lime.lime_text import LimeTextExplainer
     if user_input.strip() == "":
         st.warning("Please enter some text.")
     else:
@@ -73,15 +73,15 @@ if st.button("Predict", key="predict_button"):
         st.write(f"Confidence: **{confidence:.2f}%**")
         st.progress(int(confidence))
 
-        st.subheader("🔍 Explanation (LIME)")
-        exp = explainer.explain_instance(
-              cleaned,
-              predict_proba,
-              num_features=10
-        )
+        # st.subheader("🔍 Explanation (LIME)")
+        # exp = explainer.explain_instance(
+        #       cleaned,
+        #       predict_proba,
+        #       num_features=10
+        # )
 
-        fig = exp.as_pyplot_figure()
-        st.pyplot(fig)
+        # fig = exp.as_pyplot_figure()
+        # st.pyplot(fig)
 
 
 
