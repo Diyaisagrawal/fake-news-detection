@@ -4,6 +4,5 @@ pandas
 scikit-learn
 matplotlib
 nltk
-scipy
 tensorflow-cpu==2.15.0
-lime==0.2.0.1
+
