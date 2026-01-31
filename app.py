@@ -6,7 +6,6 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 import re
 import nltk
 from nltk.corpus import stopwords
-import matplotlib.pyplot as plt
 
 
 nltk.download("stopwords", quiet=True)
