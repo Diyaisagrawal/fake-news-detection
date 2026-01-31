@@ -1,8 +1,9 @@
-tensorflow==2.15.0
 streamlit
-numpy
+numpy==1.26.4
 pandas
 scikit-learn
-nltk
-lime
 matplotlib
+nltk
+scipy
+tensorflow-cpu==2.15.0
+lime==0.2.0.1
