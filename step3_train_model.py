@@ -50,4 +50,4 @@ print(classification_report(y_test, y_pred))
 print(confusion_matrix(y_test, y_pred))
 
 # Save the model
-model.save("fake_news_bilstm_model.h5")
+model.save("fake_news_bilstm_model.keras")
