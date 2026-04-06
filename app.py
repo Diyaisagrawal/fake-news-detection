@@ -12,7 +12,7 @@ nltk.download("stopwords", quiet=True)
 
 
 # Load model & tokenizer
-model = load_model("fake_news_bilstm_model.keras")
+model = load_model("fake_news_bilstm_model.keras", compile=False)
 
 class_names = ["FAKE", "REAL"]
 
